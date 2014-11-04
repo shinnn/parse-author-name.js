@@ -1,0 +1,35 @@
+{
+  "name": "parse-author-name",
+  "description": "Parse the name of contact info like `name <mail> (url)`",
+  "keywords": [
+    "string",
+    "contact",
+    "info",
+    "information",
+    "author",
+    "name",
+    "parse"
+  ],
+  "main": "./parse-author-name.js",
+  "homepage": "https://github.com/shinnn/parse-author-name.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/parse-author-name.js.git"
+  },
+  "authors": [
+    {
+      "name": "Shinnosuke Watanabe",
+      "url": "https://github.com/shinnn"
+    }
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.yml",
+    "node_modules",
+    "parse-author-name-cjs.js",
+    "test.js",
+    "package.json",
+    "component.json"
+  ]
+}

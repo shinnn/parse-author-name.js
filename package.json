@@ -1,0 +1,53 @@
+{
+  "name": "parse-author-name",
+  "version": "0.0.0",
+  "description": "Parse the name of contact info like `name <mail> (url)`",
+  "main": "./parse-author-name-cjs.js",
+  "files": [
+    "parse-author-name-cjs.js",
+    "LICENSES.md"
+  ],
+  "scripts": {
+    "pretest": "eslint *.js & jscs *.js",
+    "test": "node test.js",
+    "coverage": "istanbul cover test.js",
+    "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
+  },
+  "author": {
+    "name": "Shinnosuke Watanabe",
+    "email": "snnskwtnb@gmail.com",
+    "url": "https://github.com/shinnn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinnn/parse-author-name.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shinnn/parse-author-name.js/issues"
+  },
+  "homepage": "https://github.com/shinnn/parse-author-name.js",
+  "license": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shinnn/parse-author-name.js/blob/master/LICENSES.md"
+    }
+  ],
+  "keywords": [
+    "string",
+    "contact",
+    "info",
+    "information",
+    "author",
+    "name",
+    "parse",
+    "browser",
+    "client-side"
+  ],
+  "devDependencies": {
+    "eslint": "^0.9.2",
+    "istanbul": "^0.3.2",
+    "istanbul-coveralls": "^1.0.1",
+    "jscs": "^1.7.3",
+    "tape": "^3.0.1"
+  }
+}
