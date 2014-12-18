@@ -12,7 +12,10 @@ module.exports = function parseAuthorName(str) {
   'use strict';
 
   if (typeof str !== 'string') {
-    throw new TypeError(' is not a string. It should be contact info like "name <mail> (url)".');
+    throw new TypeError(
+      str +
+      ' is not a string. Argument must be a string of contact info like "name <mail> (url)".'
+    );
   }
 
   str = str.trim();
