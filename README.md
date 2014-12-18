@@ -1,9 +1,11 @@
 # parse-author-name
 
-[![Build Status](https://travis-ci.org/shinnn/parse-author-name.js.svg?branch=master)](https://travis-ci.org/shinnn/parse-author-name.js)
+[![NPM version](https://img.shields.io/npm/v/parse-author-name.svg?style=flat)](https://www.npmjs.com/package/parse-author-name)
+[![Bower version](https://img.shields.io/bower/v/parse-author-name.svg?style=flat)](https://github.com/shinnn/parse-author-name.js/releases)
+[![Build Status](https://img.shields.io/travis/shinnn/parse-author-name.js.svg?style=flat)](https://travis-ci.org/shinnn/parse-author-name.js)
 [![Build status](https://ci.appveyor.com/api/projects/status/78w10w4v87c1bxaq?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/parse-author-name-js)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/parse-author-name.js.svg)](https://coveralls.io/r/shinnn/parse-author-name.js)
-[![devDependency Status](https://david-dm.org/shinnn/parse-author-name.js/dev-status.svg)](https://david-dm.org/shinnn/parse-author-name.js#info=devDependencies)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/parse-author-name.js.svg?style=flat)](https://coveralls.io/r/shinnn/parse-author-name.js)
+[![devDependency Status](https://david-dm.org/shinnn/parse-author-name.js/dev-status.svg?style=flat)](https://david-dm.org/shinnn/parse-author-name.js#info=devDependencies)
 
 Parse the name of contact info like `name <mail> (url)`
 
@@ -18,13 +20,13 @@ name; //=> 'Shinnosuke Watanabe'
 
 ### Package managers
 
-#### [npm](https://www.npmjs.org/) [![NPM version](https://badge.fury.io/js/parse-author-name.svg)](https://www.npmjs.org/package/parse-author-name)
+#### [npm](https://www.npmjs.com/)
 
 ```sh
 npm install parse-author-name
 ```
 
-#### [Bower](http://bower.io/) [![Bower version](https://badge.fury.io/bo/parse-author-name.svg)](https://github.com/shinnn/parse-author-name.js/releases)
+#### [Bower](http://bower.io/)
 
 ```sh
 bower install parse-author-name
