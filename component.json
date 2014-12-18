@@ -16,5 +16,8 @@
   "scripts": [
     "parse-author-name-cjs.js"
   ],
+  "files": [
+    "LICENSE"
+  ],
   "license": "MIT"
 }

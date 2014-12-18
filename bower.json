@@ -10,7 +10,7 @@
     "name",
     "parse"
   ],
-  "main": "./parse-author-name.js",
+  "main": "parse-author-name.js",
   "homepage": "https://github.com/shinnn/parse-author-name.js",
   "repository": {
     "type": "git",
@@ -26,10 +26,8 @@
   "ignore": [
     "**/.*",
     "*.yml",
-    "node_modules",
-    "parse-author-name-cjs.js",
-    "test.js",
-    "package.json",
-    "component.json"
+    "*.js",
+    "*.json",
+    "node_modules"
   ]
 }
