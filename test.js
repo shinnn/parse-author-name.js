@@ -4,7 +4,9 @@ var test = require('tape');
 
 function runTest(description, main) {
   test(description, function(t) {
-    t.plan(4);
+    t.plan(5);
+
+    t.equal(main.name, 'parseAuthorName', 'should have a function name.');
 
     t.equal(main('foo <bar> (baz)'), 'foo', 'should parse author\'s name.');
 
@@ -13,13 +15,17 @@ function runTest(description, main) {
       'should return null when it cannot parse author\'s name.'
     );
 
-    t.throws(function() {
-      main(true);
-    }, /TypeError/, 'should throw a type error when it takes a non-string argument.');
+    t.throws(
+      main.bind(null, true),
+      /TypeError.*true.*must be a string/,
+      'should throw a type error when it takes a non-string argument.'
+    );
 
-    t.throws(function() {
-      main();
-    }, /TypeError/, 'should throw a type error when it takes no arguments.');
+    t.throws(
+      main.bind(null),
+      /TypeError.*undefined.*must be a string/,
+      'should throw a type error when it takes no arguments.'
+    );
   });
 }
 
@@ -27,6 +33,6 @@ runTest('require(\'parse-author-name\')', require('./'));
 
 global.window = {};
 var bowerMain = require('./bower.json').main;
-require(bowerMain);
+require('./' + bowerMain);
 
 runTest('window.parseAuthorName', window.parseAuthorName);
