@@ -2,30 +2,19 @@
   "name": "parse-author-name",
   "version": "1.0.1",
   "description": "Parse the name of contact info like `name <mail> (url)`",
-  "main": "./parse-author-name-cjs.js",
+  "main": "parse-author-name-cjs.js",
   "files": [
     "parse-author-name-cjs.js",
     "LICENSES.md"
   ],
   "scripts": {
-    "test": "node test.js",
-    "coverage": "istanbul cover test.js",
     "pretest": "eslint --config node_modules/@shinnn/eslintrc/rc.json --ignore-path .gitignore .",
+    "test": "node --harmony_arrow_functions test.js",
+    "coverage": "node --harmony_arrow_functions node_modules/.bin/istanbul cover test.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
   },
-  "author": {
-    "name": "Shinnosuke Watanabe",
-    "email": "snnskwtnb@gmail.com",
-    "url": "https://github.com/shinnn"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shinnn/parse-author-name.js.git"
-  },
-  "bugs": {
-    "url": "https://github.com/shinnn/parse-author-name.js/issues"
-  },
-  "homepage": "https://github.com/shinnn/parse-author-name.js",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "repository": "shinnn/parse-author-name.js",
   "license": "MIT",
   "keywords": [
     "string",
@@ -39,16 +28,10 @@
     "client-side"
   ],
   "devDependencies": {
-    "istanbul": "^0.3.5",
-    "istanbul-coveralls": "^1.0.1",
-    "jscs": "^1.8.1",
-    "tape": "^3.0.3"
-  },
-  "jscsConfig": {
-    "preset": "google",
-    "maximumLineLength": 98,
-    "validateLineBreaks": "LF"
     "@shinnn/eslintrc": "^1.0.0",
     "eslint": "^0.21.2",
+    "istanbul": "^0.3.14",
+    "istanbul-coveralls": "^1.0.2",
+    "tape": "^4.0.0"
   }
 }
