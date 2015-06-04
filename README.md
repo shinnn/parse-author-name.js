@@ -10,10 +10,8 @@
 Parse the name of contact info like `name <mail> (url)`
 
 ```javascript
-var info = 'Shinnosuke Watanabe <snnskwtnb@gmail.com> (https://github.com/shinnn)';
-var name = parseAuthorName(info);
-
-name; //=> 'Shinnosuke Watanabe'
+let info = 'Shinnosuke Watanabe <snnskwtnb@gmail.com> (https://github.com/shinnn)';
+parseAuthorName(info); //=> 'Shinnosuke Watanabe'
 ```
 
 ## Installation
@@ -22,20 +20,20 @@ name; //=> 'Shinnosuke Watanabe'
 
 #### [npm](https://www.npmjs.com/)
 
-```sh
+```
 npm install parse-author-name
 ```
 
 #### [Bower](http://bower.io/)
 
-```sh
+```
 bower install parse-author-name
 ```
 
 #### [Duo](http://duojs.org/)
 
 ```javascript
-var parseAuthorName = require('shinnn/parse-author-name.js');
+const parseAuthorName = require('shinnn/parse-author-name.js');
 ```
 
 ### Standalone
@@ -66,6 +64,6 @@ This project is a fork of [somebody](https://github.com/sindresorhus/somebody) a
 
 ### [parse-author-name](./LICENSES.md#parse-author-name)
 
-Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2014 - 2015 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under the MIT License.
