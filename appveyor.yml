@@ -14,5 +14,7 @@ install:
 build: off
 
 test_script:
-  - ps: 'node test.js # PowerShell'
-  - cmd: node test.js
+  - node --harmony_arrow_functions test.js
+
+cache:
+  - node_modules
