@@ -1,6 +1,6 @@
 {
   "name": "parse-author-name",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Parse the name of contact info like `name <mail> (url)`",
   "main": "parse-author-name-cjs.js",
   "files": [
@@ -29,9 +29,9 @@
   ],
   "devDependencies": {
     "@shinnn/eslintrc": "^1.0.0",
-    "eslint": "^0.21.2",
-    "istanbul": "^0.3.14",
-    "istanbul-coveralls": "^1.0.2",
+    "eslint": "^0.23.0",
+    "istanbul": "^0.3.16",
+    "istanbul-coveralls": "^1.0.3",
     "tape": "^4.0.0"
   }
 }
