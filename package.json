@@ -8,7 +8,7 @@
     "LICENSES.md"
   ],
   "scripts": {
-    "pretest": "eslint --config node_modules/@shinnn/eslintrc/rc.json --ignore-path .gitignore .",
+    "pretest": "eslint --fix --config @shinnn --ignore-path .gitignore .",
     "test": "node --harmony_arrow_functions test.js",
     "coverage": "node --harmony_arrow_functions node_modules/.bin/istanbul cover test.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
@@ -28,10 +28,10 @@
     "client-side"
   ],
   "devDependencies": {
-    "@shinnn/eslintrc": "^1.0.0",
-    "eslint": "^0.23.0",
-    "istanbul": "^0.3.16",
+    "@shinnn/eslint-config": "^1.4.0",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
     "istanbul-coveralls": "^1.0.3",
-    "tape": "^4.0.0"
+    "tape": "^4.2.2"
   }
 }
