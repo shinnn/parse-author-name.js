@@ -10,8 +10,7 @@
   "scripts": {
     "pretest": "eslint --fix --config @shinnn --ignore-path .gitignore .",
     "test": "node --harmony_arrow_functions test.js",
-    "coverage": "node --harmony_arrow_functions node_modules/.bin/istanbul cover test.js",
-    "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
+    "coverage": "node --harmony_arrow_functions node_modules/.bin/istanbul cover test.js"
   },
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "repository": "shinnn/parse-author-name.js",
@@ -31,7 +30,6 @@
     "@shinnn/eslint-config": "^1.4.0",
     "eslint": "^1.10.3",
     "istanbul": "^0.4.1",
-    "istanbul-coveralls": "^1.0.3",
-    "tape": "^4.2.2"
+    "tape": "^4.4.0"
   }
 }
