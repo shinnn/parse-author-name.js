@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "pretest": "eslint --fix --config @shinnn --ignore-path .gitignore .",
-    "test": "node --harmony_arrow_functions test.js",
-    "coverage": "node --harmony_arrow_functions node_modules/.bin/istanbul cover test.js"
+    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js",
+    "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js"
   },
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "repository": "shinnn/parse-author-name.js",
