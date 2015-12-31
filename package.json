@@ -1,6 +1,6 @@
 {
   "name": "parse-author-name",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Parse the name of contact info like `name <mail> (url)`",
   "main": "parse-author-name-cjs.js",
   "files": [
