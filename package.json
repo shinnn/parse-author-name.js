@@ -27,9 +27,9 @@
     "client-side"
   ],
   "devDependencies": {
-    "@shinnn/eslint-config": "^1.4.0",
-    "eslint": "^1.10.3",
-    "istanbul": "^0.4.1",
-    "tape": "^4.4.0"
+    "@shinnn/eslint-config": "^2.1.0",
+    "eslint": "^2.7.0",
+    "istanbul": "^0.4.3",
+    "tape": "^4.5.1"
   }
 }
